@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".AddBook">
+    <RelativeLayout
+        android:id="@+id/dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/black">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Updation"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reh1"
+        android:layout_below="@id/dashboard"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/corner_login"
+        android:layout_marginTop="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Count"
+            android:id="@+id/te1"
+            android:layout_centerHorizontal="true"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/Green"
+            android:layout_marginTop="30dp"/>
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:id="@+id/ed1"
+            android:hint="   Roll No"
+            android:textStyle="bold"
+            android:layout_below="@+id/te1"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/admin_login"
+            android:inputType="text"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/li1"
+            android:layout_below="@+id/ed1">
+
+            <EditText
+                android:layout_width="162dp"
+                android:layout_height="52dp"
+                android:hint="   Chicken Count"
+                android:inputType="number"
+                android:id="@+id/edh1"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/admin_login"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="162dp"
+                android:layout_height="52dp"
+                android:hint="   Egg Count"
+                android:inputType="number"
+                android:id="@+id/edh2"
+                android:layout_below="@id/ed1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/admin_login"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <EditText
+            android:layout_width="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="52dp"
+            android:hint="   Week"
+            android:inputType="number"
+            android:id="@+id/edh3"
+            android:layout_below="@+id/li1"
+            android:background="@drawable/admin_login"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:id="@+id/Up"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/Red"
+            android:background="@drawable/corner_radius"
+            android:layout_below="@id/edh3"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Update Count"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
